@@ -29,3 +29,7 @@ Funding, total deposits and allocation counters use checked arithmetic; percenta
 This is an independent testnet prototype. The registry account retains an upgrade key; recovery therefore trusts its operator. Child accounts are keyless and have no general upgrade path. Unknown promise outcomes remain locked rather than guessing whether funds moved. Operating funds are accounted for and preserved; general operating withdrawals are not implemented. No full NEP-171 transfer-call/resolver support, decentralized evidence hosting, live sensors, LLM integration, fiat rail, physical repair verification or mainnet readiness is claimed.
 
 The browser's uploaded evidence is session-local; its hash/reference is durable on chain. The demo repair file is explicitly simulated. No operator/customer adoption is claimed. Public submission and X publication require separate confirmation and verification.
+
+## Independent build identity
+
+The final clean Ubuntu run [43635827710](https://github.com/ShalyX/self-maintaining-asset/actions/runs/43635827710) passed all checks and exported its logs and hashes to `evidence/ci-final/`. Its WASM byte hashes differ from the validated WSL release embedded/deployed on testnet. Both build outputs passed the full Sandbox suite. Cross-environment byte reproducibility is unverified; no cause or reproducible-build attestation is asserted. The repository release artifacts intentionally remain the exact binaries verified against deployed code hashes in `evidence/testnet-proof.json`.

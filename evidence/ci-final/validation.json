@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "format-account",
+    "exit_code": 0
+  },
+  {
+    "stage": "unit-account",
+    "exit_code": 0
+  },
+  {
+    "stage": "format-registry",
+    "exit_code": 0
+  },
+  {
+    "stage": "unit-registry",
+    "exit_code": 0
+  },
+  {
+    "stage": "build-child",
+    "exit_code": 0
+  },
+  {
+    "stage": "build-registry",
+    "exit_code": 0
+  },
+  {
+    "stage": "build-failure-fixture",
+    "exit_code": 0
+  },
+  {
+    "stage": "asset_account_balance_and_authority_survive_nft_transfer",
+    "exit_code": 0
+  },
+  {
+    "stage": "underfunded_asset_creation_is_rejected_before_mint_and_can_be_retried",
+    "exit_code": 0
+  },
+  {
+    "stage": "failed_child_provisioning_can_be_retried_after_registry_code_recovery",
+    "exit_code": 0
+  },
+  {
+    "stage": "doc-account",
+    "exit_code": 0
+  },
+  {
+    "stage": "doc-registry",
+    "exit_code": 0
+  }
+]

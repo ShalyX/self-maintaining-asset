@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-14T20:19:49.521914+00:00",
+  "files": {
+    "contracts/asset-account/src/lib.rs": "b4f9e8cfad2ab917e40481bcf34a5ad98eaee447a52479087a75e669d4e17b65",
+    "contracts/asset-registry/src/lib.rs": "e80dfadcca5f0aa18320e48b22af6f6715e72507962a0be15f8964af948b5997",
+    "contracts/asset-registry/tests/test_basics.rs": "7a599f508c9597ae86aa2cce2ca8457ead11f46f3360ccac088d101f3cdcce6d",
+    "contracts/asset-account/Cargo.lock": "25924ff83e594b4844031c7cf20e64953243a484a6a69be0fd45a1ea7ef09385",
+    "contracts/asset-registry/Cargo.lock": "4e8678cc9f09c7f6399da9bfe7149d1f46c4b0b271d6c7bfdb9ad9d8907f6c33"
+  },
+  "deployed_release_manifest": "artifact-manifest.json",
+  "independent_ci_manifest": "ci-final/artifact-manifest.json",
+  "cross_environment_byte_reproducibility": "UNVERIFIED"
+}

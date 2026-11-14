@@ -1,0 +1,4 @@
+   Compiling near-sdk v5.30.1
+   Compiling near-contract-standards v5.30.1
+   Compiling asset-registry v0.1.0 (/home/runner/work/self-maintaining-asset/self-maintaining-asset/contracts/asset-registry)
+    Finished `release` profile [optimized] target(s) in 3.84s

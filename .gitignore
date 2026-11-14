@@ -35,3 +35,4 @@ work/
 **/__pycache__/
 
 !evidence/contract-logs/*.log
+!evidence/ci-final/*.log

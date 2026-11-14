@@ -89,3 +89,8 @@ Before POST:
 5. Generate requestId once, preserve it, and submit only once. If a network error or 503 occurs, retry with the same requestId. A 201 response is success. A 409 means the repository was already submitted or the email limit was reached; do not try to bypass it.
 
 Never publish, push, post on X or submit the form without the required explicit human confirmation.
+
+
+## Rechecked 14 November 2026
+
+The live organizer brief still closes submissions at 2026-11-14 23:59 UTC. A public repository and human-published X demo post with attached video or screenshots are required. The application can be sent only after the human confirms the complete payload and contact notice. Solo team details are confirmed. The user asked to retain both X post options as drafts; no social post or application has been sent.

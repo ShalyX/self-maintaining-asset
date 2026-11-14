@@ -1,0 +1,8 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.19s
+     Running tests/test_basics.rs (/home/runner/work/self-maintaining-asset/self-maintaining-asset/.validation/target/debug/deps/test_basics-b4af23463e5433af)
+
+running 1 test
+test underfunded_asset_creation_is_rejected_before_mint_and_can_be_retried ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 3.77s
+
