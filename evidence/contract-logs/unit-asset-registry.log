@@ -1,0 +1,28 @@
+   Compiling asset-registry v0.1.0 (/root/near-validation/asset-registry)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1m 24s
+     Running unittests src/lib.rs (/root/near-validation/target/debug/deps/asset_registry-0ec15c8fa02021ff)
+
+running 20 tests
+test tests::active_asset_cannot_be_retried - should panic ... ok
+test tests::confirmed_payout_sets_paid_and_releases_pending_lock ... ok
+test tests::confirmed_restored_payout_can_be_retried ... ok
+test tests::creation_cost_covers_embedded_code_storage_and_both_buffers ... ok
+test tests::current_owner_can_retry_failed_provisioning ... ok
+test tests::definite_failure_retains_credit_for_retry ... ok
+test tests::empty_success_activates_and_consumes_credit ... ok
+test tests::exhausted_passport_storage_cannot_spend_shared_treasury - should panic ... ok
+test tests::failed_payout_receipt_keeps_replay_lock ... ok
+test tests::history_rent_is_charged_to_the_passport_and_account_identity_is_retained ... ok
+test tests::legacy_missing_credit_requires_full_owner_funding ... ok
+test tests::malformed_payout_result_keeps_replay_lock ... ok
+test tests::nft_handover_during_pending_payout_preserves_asset_and_settles_work_order ... ok
+test tests::non_owner_cannot_retry_failed_provisioning - should panic ... ok
+test tests::outsider_cannot_control_passport_storage_funding - should panic ... ok
+test tests::oversized_payout_result_keeps_replay_lock ... ok
+test tests::owner_can_refill_passport_history_without_touching_child_balances ... ok
+test tests::retry_quote_and_transfer_use_asset_credit_plus_exact_topup ... ok
+test tests::retry_rejects_insufficient_topup - should panic ... ok
+test tests::unexpected_output_is_unknown_and_not_retryable ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.08s
+

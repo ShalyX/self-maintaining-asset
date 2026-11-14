@@ -1,0 +1,14 @@
+NEAR HACKATHON — SELF-MAINTAINING ASSET
+TESTNET DEMONSTRATION EVIDENCE FIXTURE
+
+Asset: Lagos Solar Water Point 01
+Work order: WO-001
+Scenario: Simulated pump seal replacement and delivery test.
+
+IMPORTANT: This is a reproducible demonstration fixture only.
+No physical borehole was inspected.
+No real repair was performed.
+No real-world service claim is being made.
+
+The on-chain work order stores the SHA-256 digest of this exact file.
+The digest proves file integrity, not the truth of a physical-world event.

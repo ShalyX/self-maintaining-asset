@@ -1,0 +1,2 @@
+3cba1510c55d6be475bfc54dc5c1c0b0dbbd3137769a831053af6832b4dbbb50  asset_account.wasm
+b14d1f8e751f11a5dd4bb4e4ceff752e8281ff15db33d19389ceae0516413c79  asset_registry.wasm

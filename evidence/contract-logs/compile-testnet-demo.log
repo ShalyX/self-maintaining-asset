@@ -1,0 +1,12 @@
+   Compiling asset-registry v0.1.0 (/root/near-validation/asset-registry)
+warning: value assigned to `balances` is never read
+   --> examples/testnet_demo.rs:157:9
+    |
+157 |         balances = child
+    |         ^^^^^^^^
+    |
+    = help: maybe it is overwritten before being read?
+    = note: `#[warn(unused_assignments)]` (part of `#[warn(unused)]`) on by default
+
+warning: `asset-registry` (example "testnet_demo") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1m 57s

@@ -1,0 +1,14 @@
+   Compiling asset-account v0.1.0 (/root/near-validation/asset-account)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3m 20s
+     Running unittests src/lib.rs (/root/near-validation/target/debug/deps/asset_account-3a3b01c6a6354ad6)
+
+running 6 tests
+test tests::failed_transfer_callback_restores_the_reserved_amount ... ok
+test tests::non_registry_cannot_release_reserve - should panic ... ok
+test tests::registry_can_authorize_a_maintenance_payment_from_reserve ... ok
+test tests::reserve_cannot_be_overdrawn - should panic ... ok
+test tests::revenue_is_split_into_operating_and_maintenance_balances ... ok
+test tests::successful_transfer_callback_keeps_the_reserve_deducted ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.05s
+

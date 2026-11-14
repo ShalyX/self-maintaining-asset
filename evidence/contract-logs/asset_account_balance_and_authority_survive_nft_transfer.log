@@ -1,0 +1,9 @@
+   Compiling asset-registry v0.1.0 (/root/near-validation/asset-registry)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 41.60s
+     Running tests/test_basics.rs (/root/near-validation/target/debug/deps/test_basics-b4af23463e5433af)
+
+running 1 test
+test asset_account_balance_and_authority_survive_nft_transfer ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 64.45s
+

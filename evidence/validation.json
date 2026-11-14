@@ -1,0 +1,171 @@
+[
+  {
+    "stage": "fmt-asset-account",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T18:50:40.124512+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "fmt"
+    ]
+  },
+  {
+    "stage": "unit-asset-account",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T18:53:57.190783+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "test",
+      "--locked",
+      "--lib",
+      "--",
+      "--test-threads=1"
+    ]
+  },
+  {
+    "stage": "fmt-asset-registry",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T18:54:00.208513+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "fmt"
+    ]
+  },
+  {
+    "stage": "unit-asset-registry",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T18:55:25.135828+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "test",
+      "--locked",
+      "--lib",
+      "--",
+      "--test-threads=1"
+    ]
+  },
+  {
+    "stage": "compile-testnet-demo",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T18:57:18.831478+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "build",
+      "--locked",
+      "--example",
+      "testnet_demo"
+    ]
+  },
+  {
+    "stage": "build-registry",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T18:59:45.844007+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "build",
+      "--locked",
+      "--lib",
+      "--target",
+      "wasm32-unknown-unknown",
+      "--release"
+    ]
+  },
+  {
+    "stage": "build-isolated-failure",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T18:59:54.197626+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "build",
+      "--locked",
+      "--lib",
+      "--target",
+      "wasm32-unknown-unknown",
+      "--release"
+    ]
+  },
+  {
+    "stage": "asset_account_balance_and_authority_survive_nft_transfer",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T19:01:37.328600+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "test",
+      "--locked",
+      "--test",
+      "test_basics",
+      "asset_account_balance_and_authority_survive_nft_transfer",
+      "--",
+      "--exact",
+      "--test-threads=1",
+      "--nocapture"
+    ]
+  },
+  {
+    "stage": "underfunded_asset_creation_is_rejected_before_mint_and_can_be_retried",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T19:01:47.219224+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "test",
+      "--locked",
+      "--test",
+      "test_basics",
+      "underfunded_asset_creation_is_rejected_before_mint_and_can_be_retried",
+      "--",
+      "--exact",
+      "--test-threads=1",
+      "--nocapture"
+    ]
+  },
+  {
+    "stage": "failed_child_provisioning_can_be_retried_after_registry_code_recovery",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T19:02:05.524141+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "test",
+      "--locked",
+      "--test",
+      "test_basics",
+      "failed_child_provisioning_can_be_retried_after_registry_code_recovery",
+      "--",
+      "--exact",
+      "--test-threads=1",
+      "--nocapture"
+    ]
+  },
+  {
+    "stage": "doc-asset-registry",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T19:02:16.961122+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "test",
+      "--locked",
+      "--doc"
+    ]
+  },
+  {
+    "stage": "doc-asset-account",
+    "exit_code": 0,
+    "finished_at": "2026-11-14T19:02:49.543684+00:00",
+    "command": [
+      "cargo",
+      "+1.97.1",
+      "test",
+      "--locked",
+      "--doc"
+    ]
+  }
+]

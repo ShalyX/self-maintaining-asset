@@ -1,0 +1,39 @@
+name: Test
+on:
+  workflow_call:
+
+jobs:
+  code-formatting:
+    name: Code Formatting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - run: cargo fmt --check
+
+  code-linter:
+    name: Code Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run cargo clippy
+        run: |
+          rustup component add clippy
+          cargo clippy --all-features --workspace --tests -- --warn clippy::all --warn clippy::nursery
+
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install cargo-near CLI
+        run: curl --proto '=https' --tlsv1.2 -LsSf https://github.com/near/cargo-near/releases/download/cargo-near-v0.23.0/cargo-near-installer.sh | sh
+      - name: Build production and failure-path test artifacts
+        run: python3 scripts/build_test_artifacts.py
+      - name: Run cargo test
+        env:
+          ASSET_REGISTRY_WASM_PATH: target/near/asset_registry.wasm
+          ASSET_REGISTRY_FAIL_WASM_PATH: target/near/asset_registry_fail.wasm
+        run: cargo test --locked -- --test-threads=1
