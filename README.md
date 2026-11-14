@@ -202,7 +202,7 @@ This section is updated as each proof gate passes. Local unit tests, Sandbox int
 - Isolated Sandbox integrations: 3/3 passed against the current release artifacts, including full maintenance lifecycle, unauthorized retry, real failed child deployment and code recovery.
 - Public testnet: deployment, creation, 1 NEAR revenue split, diagnosis, assignment, quote, owner approval, completion digest, NFT handover, former-owner rejection and 0.1 NEAR payout verified.
 - Final demo state: owner `bobasset141126.testnet`; work order `WO-001` is `PAID`; operating 0.8 NEAR; maintenance reserve 0.1 NEAR.
-- Deployed frontend: Meteor wallet connection, fresh asset creation, cancellation, revenue deposit, observation/triage and persistent work-order creation passed in the browser. All four tabs passed mobile navigation at 390px; final desktop/mobile captures are in `evidence/screenshots/`.
+- Deployed frontend: Meteor wallet connection, fresh asset creation, cancellation, revenue deposit, observation/triage and persistent work-order creation passed in the browser. All four tabs passed mobile navigation at 390px. Final production captures from commit `de745a1` are in `evidence/screenshots-final/` with the pass recorded in [final-qa.md](evidence/final-qa.md); earlier captures are in `evidence/screenshots/`.
 - Clean Ubuntu CI: frontend and the full contract suite passed. See [CI evidence](evidence/ci-run.json), [browser acceptance and limits](evidence/browser-qa.json), and [engineering audit](AUDIT.md).
 
 ## Hackathon disclosure
