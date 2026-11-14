@@ -229,7 +229,7 @@ textarea::placeholder,.text-input::placeholder,.input-action input::placeholder 
 @media (max-width: 760px) {
   .sidebar { width: 64px; padding: 20px 8px; }
   .brand-lockup { padding: 0 4px 30px; }
-  .brand-lockup > div:last-child,.workspace-label,.nav-item:not(.active) { display: none; }
+  .brand-lockup > div:last-child,.workspace-label { display: none; }
   .brand-lockup { justify-content: center; }
   .side-nav { gap: 8px; }
   .nav-item { justify-content: center; padding: 12px 0; font-size: 0; }

@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-11-14T20:07:00.512425+00:00",
+  "deployment": "https://self-maintaining-asset.vercel.app",
+  "wallet": "Meteor Wallet, NEAR testnet",
+  "browser_operations": [
+    {
+      "action": "register new asset qa-water-141126",
+      "hash": "An4HmEv9VxpUGz6XETQRmCKKPVWWxRY33KXiq7feNKKG",
+      "signer": "bobasset141126.testnet",
+      "ui_result": "Transaction confirmed on NEAR testnet"
+    },
+    {
+      "action": "cancel 0.05 NEAR deposit",
+      "ui_result": "User cancelled the action; no success notice"
+    },
+    {
+      "action": "deposit 0.05 NEAR into QA asset",
+      "hash": "GNvBkTeCfqTn2W3jJDJsvT5fVPeC8LLbfUCMWur8Kojo",
+      "signer": "bobasset141126.testnet",
+      "ui_result": "Transaction confirmed on NEAR testnet"
+    },
+    {
+      "action": "operator observation, ruleset triage and persistent work order",
+      "hash": "7tFWTVw8WiXcoRJZXuPKbctkGqFLLNPJeJEoT6S4pRm2",
+      "signer": "bobasset141126.testnet",
+      "ui_result": "Transaction confirmed on NEAR testnet"
+    }
+  ],
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "horizontal_overflow": false,
+    "tabs_passed": [
+      "Overview",
+      "Maintenance",
+      "Asset passport",
+      "Handover"
+    ]
+  },
+  "desktop": {
+    "viewport": [
+      1440,
+      1000
+    ],
+    "screens": [
+      "overview",
+      "maintenance PAID record",
+      "passport ownership history",
+      "handover balances"
+    ]
+  },
+  "limits": "Wallet creation, cancellation, deposit and work-order creation exercised in browser. Technician quote, approval, completion, payout and handover were proven by the signed testnet run and shown through finalized UI state; their browser buttons were not all exercised end to end."
+}

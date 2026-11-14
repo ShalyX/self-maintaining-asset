@@ -74,4 +74,5 @@ for source, name in [(child, 'asset_account.wasm'), (production, 'asset_registry
     shutil.copy2(source, dest)
 (artifacts / 'SHA256SUMS.txt').write_text(f'{sha(child)}  asset_account.wasm\n{sha(production)}  asset_registry.wasm\n')
 (OUT / 'artifact-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+print(json.dumps(manifest, indent=2), flush=True)
 print('All contract checks passed. Release artifacts synchronized; previous files backed up.', flush=True)

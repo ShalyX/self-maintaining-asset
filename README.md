@@ -6,6 +6,8 @@ Built for the **NEAR Hackathon · Track 10: NFTs That Do Something**.
 
 > This is a testnet prototype. It does not transfer legal ownership of a physical asset, connect to live water sensors, accept NGN payments, or claim that a real repair took place.
 
+![Asset passport](evidence/screenshots/overview-final-desktop.png)
+
 [Open the live testnet app](https://self-maintaining-asset.vercel.app) · [Judge walkthrough](JUDGE_WALKTHROUGH.md) · [On-chain evidence](evidence/testnet-proof.json)
 
 ## The problem
@@ -183,6 +185,8 @@ In the browser prototype, an uploaded evidence file remains in that browser sess
 - No physical repair or customer adoption claim.
 - No legal transfer of the physical borehole.
 - No mainnet or production readiness.
+- Operating funds are preserved, but general operating withdrawals are not implemented.
+- The registry retains an operator upgrade key; unknown callbacks remain locked for investigation.
 - No full NEP-171 `nft_transfer_call` / resolver implementation; the prototype uses the core NFT transfer path.
 
 The maintenance coordinator is a transparent ruleset in this prototype, not a claim of an LLM integration. It can organize operator-supplied information but cannot certify a fault or a repair.
@@ -198,7 +202,8 @@ This section is updated as each proof gate passes. Local unit tests, Sandbox int
 - Isolated Sandbox integrations: 3/3 passed against the current release artifacts, including full maintenance lifecycle, unauthorized retry, real failed child deployment and code recovery.
 - Public testnet: deployment, creation, 1 NEAR revenue split, diagnosis, assignment, quote, owner approval, completion digest, NFT handover, former-owner rejection and 0.1 NEAR payout verified.
 - Final demo state: owner `bobasset141126.testnet`; work order `WO-001` is `PAID`; operating 0.8 NEAR; maintenance reserve 0.1 NEAR.
-- Deployed frontend browser QA: in progress; tracked separately in [EVIDENCE.md](EVIDENCE.md).
+- Deployed frontend: Meteor wallet connection, fresh asset creation, cancellation, revenue deposit, observation/triage and persistent work-order creation passed in the browser. All four tabs passed mobile navigation at 390px; final desktop/mobile captures are in `evidence/screenshots/`.
+- Clean Ubuntu CI: frontend and the full contract suite passed. See [CI evidence](evidence/ci-run.json), [browser acceptance and limits](evidence/browser-qa.json), and [engineering audit](AUDIT.md).
 
 ## Hackathon disclosure
 

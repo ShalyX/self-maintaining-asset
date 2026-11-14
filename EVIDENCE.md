@@ -29,3 +29,12 @@ C-09 technical mechanism VERIFIED IN LOCAL SANDBOX: account/balance continuity a
 ## Final release — 14 November 2026
 
 6 asset-account unit tests, 20 asset-registry unit tests and 3 isolated Sandbox integrations passed against the release artifacts. Logs and hash manifest: `evidence/`. Public testnet full maintenance lifecycle and handover passed; finalized RPC proof is `evidence/testnet-proof.json`. Hosted app: https://self-maintaining-asset.vercel.app . Wallet QA found the MyNearWallet retirement; Meteor replacement and browser acceptance remain in progress. GitHub publication, public demo post and submission are not yet claimed.
+
+
+## Browser acceptance and clean CI
+
+Meteor connection and real wallet-signed creation of qa-water-141126 passed. A cancelled deposit displayed an error, then a deliberately approved 0.05 NEAR deposit finalized. Operator observation, deterministic triage and work-order creation persisted on chain. Transaction links, browser proof limits and mobile tab results are in `evidence/browser-qa.json`. All four mobile tabs now work; no horizontal overflow at 390px. Current screenshots: `evidence/screenshots/`.
+
+Clean Ubuntu CI run 43633555968 passed frontend build/lint and the full contract rebuild plus serial integrations. The first artifact upload omitted hidden .validation files; the upload setting is corrected for the next run. This did not affect test execution or its successful result.
+
+The installed HyperFrames capture initially failed with Windows spawn EFTYPE; explicitly selecting official Windows Chrome repaired it, and a fresh URL capture succeeded. The failed partial capture is excluded from the film. Media production continues from real product captures. No X post or hackathon application has been submitted.
